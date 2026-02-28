@@ -214,14 +214,6 @@ body{
   box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-.trending-container{
-  margin-top: 1vh;
-  background-color: white;
-  height: 27vh;
-  width: 87%;
-  border-radius: 3%;
-  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
-}
 .announcement-card{    
   height: 100px;
   display: flex;
@@ -246,3 +238,41 @@ body{
   overflow: hidden;  
   margin-bottom: 1.3em;
 }
+
+.trending-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 1.5em 1em 1.5em;
+  margin-top: 1vh;
+  background-color: white;
+  height: 27vh;
+  width: 87%;
+  border-radius: 3%;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.trending-avatar{
+  height: 42px;
+  width: auto;
+}
+.trending-card{
+  display: flex;
+  align-items: center;  
+}
+.trending-avatar-text{  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.75em;
+}
+.trending-avatar-text>span:nth-child(1){ 
+  font-family: "main-font"; 
+  font-size: 14px;
+}
+.trending-avatar-text>span:nth-child(2){
+  font-family: "main-font";
+  font-size: 14px;
+  color: grey;
+}
+
