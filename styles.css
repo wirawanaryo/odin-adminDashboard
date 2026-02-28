@@ -19,7 +19,7 @@ body{
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(11, 1fr);
   color: blueviolet;
 }
 
@@ -27,7 +27,7 @@ body{
   color: white;
   background-color: var(--mainColor);
   grid-column: 1/3;
-  grid-row: 1/11;
+  grid-row: 1/-1;
   box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
@@ -75,10 +75,104 @@ body{
 .searchBar{
   grid-column: 3/13;
   grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  
 }
+.searchBar-top{
+  flex: 3;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBar-bot{
+  flex: 4; 
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+.input-section, .icon-section{
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+.input-section{
+  margin-left: 30px;
+}
+.icon-section{
+  margin-right: 90px;
+}
+.avatars{
+  height: 42px;
+  width: auto;
+}
+.icon-section > img{
+  margin-left: 0.5vw;
+}
+.icon-button{
+  height: 24px;
+  width: auto;
+  border: none;
+  background-color: inherit;
+}
+.icon-black{
+  height: 24px;
+  width: auto;
+}
+#search-input{
+  height: 30px;
+  width: clamp(200px, 40vw, 50vw);
+  background-color: #E3EBF2;
+  border: none;
+  border-radius: 20px;
+}
+#username-short{
+  font-family: 'main-font-bold';
+  font-size: 18px;
+  color: black;
+  margin-left:1vw;
+}
+.profile-section{
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-left: 30px;
+}
+.profile-section>.avatars{
+  height: 60px;
+  width: auto;
+}
+.profile-name{
+  display: flex;
+  flex-direction: column;
+  font-family: "main-font-bold";
+  color: black;
+}
+.button-section{
+  display: flex;
+  gap: 1.5vw;
+  margin-right: 90px;
+}
+.profile-button{
+  font-family: "main-font-bold";
+  color: white;
+  font-size: 14px;
+  width: 6em;
+  height: 2.5em;
+  border: none;
+  border-radius:3em;
+  background-color: #00a3e0;
+}
+.profile-name>span:nth-child(1){
+  font-size: 12px;
+}
+#username-long{
+  font-size: 20px;
+}
+
 
 .content{
   background-color: #E3EBF2;
   grid-column: 3/13;
-  grid-row: 3/11;
+  grid-row: 3/-1;
 }
